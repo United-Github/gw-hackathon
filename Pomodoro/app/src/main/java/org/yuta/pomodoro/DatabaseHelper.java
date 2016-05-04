@@ -33,9 +33,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ")");
 
         // 初期データ投入
-        db.execSQL("INSERT INTO SectionCountTable(Date,Count) values (00050226,300);");
-        db.execSQL("INSERT INTO SectionCountTable(Date,Count) values (19900118,200);");
-        db.execSQL("INSERT INTO SectionCountTable(Date,Count) values (20140809,100);");
+        db.execSQL("INSERT INTO SectionCountTable(Date,Count) values ('00050226',300);");
+        db.execSQL("INSERT INTO SectionCountTable(Date,Count) values ('19900118',200);");
+        db.execSQL("INSERT INTO SectionCountTable(Date,Count) values ('20140809',100);");
     }
 
     /*

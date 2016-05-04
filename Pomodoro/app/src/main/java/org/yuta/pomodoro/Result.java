@@ -13,11 +13,7 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 public class Result extends Activity {
-    private static final String[] texts = {
-            "abc ", "bcd", "cde", "def", "efg",
-            "fgh", 	"ghi", "hij", "ijk", "jkl",
-            "klm"
-    };
+
     private ArrayList<String> data = new ArrayList<String>();
     /** Called when the activity is first created. */
     @Override
@@ -34,13 +30,15 @@ public class Result extends Activity {
         boolean mov = c.moveToFirst();
 
         while (mov) {
-           data.add(String.format("%s : %s", c.getString(0),
+            String date = c.getString(0);
+           data.add(String.format("%s/ : %s", date.substring(0,4),
                    c.getInt(1)));
             mov = c.moveToNext();
         }
 
 
         setContentView(R.layout.result_main);
+
         ListView listView1 = (ListView)findViewById(R.id.listView);
         // simple_list_item_1 は、 もともと用意されている定義済みのレイアウトファイルのID
         ArrayAdapter<String> arrayAdapter =
