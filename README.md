@@ -7,6 +7,7 @@
 - RelativeLayout
 - TableLayout
 ### ビュー
+
 - TextView
 - EditText
 - Button
@@ -14,13 +15,22 @@
 - RadioButton
 - Spinner
 - ImageView
+
 ### アダプタ
+
 - ListView
+
 ### ダイアログ
+
 - AlertDialog
+
 ### イベント(リスナー)
+
 - onClickListener
+
 ### インテント
+
 - 明示的インテント
 - 暗黙的インテント
+
 ## ハッカソン
